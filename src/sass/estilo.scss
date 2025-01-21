@@ -1,0 +1,15 @@
+$cor-primaria: #3498db;
+$cor-secundaria: #2ecc71;
+
+.botao {
+    background-color: $cor-primaria;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $cor-secundaria; 
+    }
+}
