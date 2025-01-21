@@ -14,11 +14,8 @@ gulp.task('styles', () => {
 
 // Compressão de imagens
 gulp.task('images', () => {
-    return gulp.src('./src/images/**/*.{jpg,jpeg,png,svg,gif}')
+    return gulp.src('./src/images/**/*')
         .pipe(imagemin())
-        .on('data', (file) => {
-            console.log('Imagem processada:', file.relative);
-        })
         .pipe(gulp.dest('./dist/images'));
 });
 
